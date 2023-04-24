@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { useNavigate } from "react-router-dom";
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../Common/Navbar';
+import Footer from '../Common/Footer';
 const ProductList = () => {
   const navigate=useNavigate();
   const [productList, setproductList] = useState([

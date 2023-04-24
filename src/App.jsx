@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import ProductList from './Components/ProductList';
-import Cart from './Components/Cart';
-import EditProduct from './Components/EditProduct';
-import AddProduct from './Components/AddProduct';
-import Profile from './Components/Profile';
+import ProductList from './Module/User/ProductList';
+import Cart from './Module/User/Cart';
+import EditProduct from './Module/Admin/EditProduct';
+import AddProduct from './Module/Admin/AddProduct';
+import Profile from './Module/Common/Profile';
 const App = () => {
   return (
     <BrowserRouter>

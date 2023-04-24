@@ -1,12 +1,12 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const navigate=useNavigate();
   return (
     <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <Link to="/" className="btn btn-ghost normal-case text-xl">daisyUI</Link>
   </div>
   <div className="flex-none gap-2">
     <div>
