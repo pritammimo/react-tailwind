@@ -9,6 +9,7 @@ import Login from './Module/Common/Login';
 import Register from './Module/User/Register';
 import Orders from './Module/Admin/Orders';
 import OrderViewPage from './Module/Admin/OrderViewPage';
+import ProductPage from './Module/User/ProductPage';
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ const App = () => {
     <Route path="/cart" element={<Cart/>}/>
     <Route path="/editproduct/:id" element={<EditProduct/>}/>
     <Route path="/addproduct" element={<AddProduct/>} />
+    <Route path="/product/:id" element={<ProductPage/>} />
     <Route path="/profile" element={<Profile/>} />
     <Route path="/orders" element={<Orders/>} />
     <Route path="/order/:id" element={<OrderViewPage/>}/>
