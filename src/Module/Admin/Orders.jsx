@@ -3,11 +3,14 @@ import React from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Navbar from "../Common/Navbar";
 import Footer from "../Common/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Orders = () => {
+    const navigate=useNavigate()
     const people = [
         {
           name: "John Doe",
+          id:1,
           price: "1000",
           orderitem:6,
           email: "john@devui.com",
@@ -18,6 +21,7 @@ const Orders = () => {
         },
         {
           name: "Jane Doe",
+          id:2,
           price: "1200",
           orderitem:5,
           status:"completed",
@@ -128,12 +132,12 @@ const Orders = () => {
                         {person.phone}
                       </td>
                       <td className="px-4 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <a
-                          href="#"
+                        <div
+                          onClick={()=>navigate(`/order/${person.id}`)}
                           className="text-gray-500 dark:text-gray-300 hover:text-indigo-600"
                         >
                           View
-                        </a>
+                        </div>
                       </td>
                     </tr>
                   ))}

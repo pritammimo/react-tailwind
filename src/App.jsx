@@ -8,6 +8,7 @@ import Profile from './Module/Common/Profile';
 import Login from './Module/Common/Login';
 import Register from './Module/User/Register';
 import Orders from './Module/Admin/Orders';
+import OrderViewPage from './Module/Admin/OrderViewPage';
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => {
     <Route path="/addproduct" element={<AddProduct/>} />
     <Route path="/profile" element={<Profile/>} />
     <Route path="/orders" element={<Orders/>} />
+    <Route path="/order/:id" element={<OrderViewPage/>}/>
     </Routes>
   </BrowserRouter>
   )

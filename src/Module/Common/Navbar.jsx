@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const navigate=useNavigate();
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 ">
   <div className="flex-1">
     <Link to="/" className="btn btn-ghost normal-case text-xl">daisyUI</Link>
   </div>
@@ -55,6 +55,7 @@ const Navbar = () => {
     </div>
   </div>
 </div>
+
   )
 }
 
