@@ -57,6 +57,7 @@ const Navbar = () => {
           </div>
         </li>
         <li><div onClick={()=>navigate('/addproduct')}>Add Product</div></li>
+        <li><div onClick={()=>navigate('/productsadmin')}>All admin Products</div></li>
         <li><a>Logout</a></li>
       </ul>
     </div>

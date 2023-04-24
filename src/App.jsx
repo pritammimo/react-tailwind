@@ -10,6 +10,7 @@ import Register from './Module/User/Register';
 import Orders from './Module/Admin/Orders';
 import OrderViewPage from './Module/Admin/OrderViewPage';
 import ProductPage from './Module/User/ProductPage';
+import ProductsListAdmin from './Module/Admin/ProductsListAdmin';
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
     <Route path="/signin" element={<Login />} />
     <Route path="/signup" element={<Register />} />
     <Route path="/" element={<ProductList />} />
+    <Route path="/productsadmin" element={<ProductsListAdmin />} />
     <Route path="/cart" element={<Cart/>}/>
     <Route path="/editproduct/:id" element={<EditProduct/>}/>
     <Route path="/addproduct" element={<AddProduct/>} />
