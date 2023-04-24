@@ -5,15 +5,21 @@ import Cart from './Module/User/Cart';
 import EditProduct from './Module/Admin/EditProduct';
 import AddProduct from './Module/Admin/AddProduct';
 import Profile from './Module/Common/Profile';
+import Login from './Module/Common/Login';
+import Register from './Module/User/Register';
+import Orders from './Module/Admin/Orders';
 const App = () => {
   return (
     <BrowserRouter>
     <Routes>
+    <Route path="/signin" element={<Login />} />
+    <Route path="/signup" element={<Register />} />
     <Route path="/" element={<ProductList />} />
     <Route path="/cart" element={<Cart/>}/>
     <Route path="/editproduct/:id" element={<EditProduct/>}/>
     <Route path="/addproduct" element={<AddProduct/>} />
     <Route path="/profile" element={<Profile/>} />
+    <Route path="/orders" element={<Orders/>} />
     </Routes>
   </BrowserRouter>
   )
