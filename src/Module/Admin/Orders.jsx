@@ -1,6 +1,8 @@
 
 import React from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
+import Navbar from "../Common/Navbar";
+import Footer from "../Common/Footer";
 
 const Orders = () => {
     const people = [
@@ -27,6 +29,7 @@ const Orders = () => {
       ];
   return (
     <>
+    <Navbar/>
     <section className="container px-4 mx-auto py-4">
       <div className="flex items-center justify-between">
         <div>
@@ -202,6 +205,7 @@ const Orders = () => {
         </a>
       </div>
     </section>
+    <Footer/>
   </>
   )
 }
