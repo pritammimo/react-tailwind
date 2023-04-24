@@ -61,6 +61,10 @@ const Cart = () => {
   <div className="divider"></div> 
         </div>
       ))}
+      <div className="btn-group btn-group-vertical lg:btn-group-horizontal justify-end">
+      <button className="btn m-2" onClick={()=>navigate("/")}>Cancel</button>
+  <button className="btn btn-active ">Order</button>
+</div>
 </div>
 </div>
 <Footer/>
