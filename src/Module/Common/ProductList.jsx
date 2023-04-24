@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { useNavigate } from "react-router-dom";
-import Navbar from '../Common/Navbar';
-import Footer from '../Common/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 const ProductList = () => {
   const navigate=useNavigate();
   const [productList, setproductList] = useState([
@@ -63,6 +63,7 @@ const ProductList = () => {
             <p>{product?.description}</p>
             <div className="card-actions justify-end">
               <div className="badge badge-outline">Add to cart</div>
+              <div className="badge badge-outline" onClick={()=>navigate(`/editproduct/${product?.id}`)}>Edit Product</div>
               <div className="badge badge-outline" onClick={()=>navigate(`/product/${product?.id}`)}>View</div>
               <div className="badge badge-outline">Delete</div>
             </div>
